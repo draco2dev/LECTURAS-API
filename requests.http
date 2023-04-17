@@ -1,0 +1,46 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Carlos garrido",
+    "age": "24",
+    "email": "steward@consola.com"
+}
+
+###
+//obtener todos los usuarios
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+//encontar un usuario especifico
+GET http://localhost:9000/api/users/643c9408b56743364d46adaf HTTP/1.1
+
+###
+//Actualizar
+Put http://localhost:9000/api/users/643c9408b56743364d46adaf HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Draco garrido",
+    "age": "24",
+    "email": "steward@consola.com"
+}
+
+###
+DELETE http://localhost:9000/api/users/643c93428fbd66b8ae8e72d0 HTTP/1.1
+
+
+//MEDICIONES 
+###
+POST http://localhost:9000/api/datas HTTP/1.1
+Content-Type: application/json
+{
+    "intencidad": "38.5",
+    "potencia": "0.25"
+}
+###
+//obtener todos los usuarios
+GET http://localhost:9000/api/datas HTTP/1.1
+###
+DELETE http://localhost:9000/api/datas/643ca910fd7205608b437419 HTTP/1.1

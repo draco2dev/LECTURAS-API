@@ -1,0 +1,7 @@
+Ejecutar servidor 
+
+npm run start 
+
+para reiniciar cnrtl + s
+
+modelos de datos o esquemas 
